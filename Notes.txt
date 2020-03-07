@@ -1,3 +1,6 @@
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 From:  https://docs.bitnami.com/kubernetes/how-to/deploy-mean-application-kubernetes-helm/
+
+
+helm install my-mean-app --set repository=https://github.com/cburchett/MeanMapAppV2.0.git bitnami/node --set global.storageClass=storage-class-nas
